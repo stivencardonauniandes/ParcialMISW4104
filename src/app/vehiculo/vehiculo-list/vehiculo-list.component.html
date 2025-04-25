@@ -1,0 +1,26 @@
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-12">
+        <h2>Lista de Vehículos</h2>
+        <p>Total de vehículos: {{ totalVehiculos }}</p>
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Línea</th>
+              <th scope="col">Modelo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let vehiculo of vehiculos; index as i">
+              <th scope="row">{{ i + 1 }}</th>
+              <td>{{ vehiculo.marca }}</td>
+              <td>{{ vehiculo.linea }}</td>
+              <td>{{ vehiculo.modelo }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
