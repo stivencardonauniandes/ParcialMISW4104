@@ -1,5 +1,19 @@
 <div class="container">
-  <h1>{{ title }}</h1>
+  <div class="row">
+    <div class="col mb-2 pb-1 border-bottom border-3">
+      <h1>{{ title }}</h1>
+    </div>
+  </div>
+  <div class="row p-0 m-0">
+    <div class="col mb-1 pb-1 border-bottom">
+      <img src="banner.png" alt="Banner TuSegundazo.com" class="img-fluid">
+    </div>
+  </div>
   <app-vehiculo-list></app-vehiculo-list>
+<footer class="row fixed-bottom">
+  <div class="col text-center">
+    <p>Contact us: +57 3102105253 - info&#64;tusegundazo.com - &#64;tusegundazo</p>
+  </div>
+</footer>
 </div>
 <router-outlet />

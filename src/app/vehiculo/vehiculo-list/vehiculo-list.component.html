@@ -1,10 +1,8 @@
 <div class="container mt-4">
     <div class="row">
-      <div class="col-12">
-        <h2>Lista de Vehículos</h2>
-        <p>Total de vehículos: {{ totalVehiculos }}</p>
-        <table class="table table-striped">
-          <thead class="thead-dark">
+      <div class="col-8">
+        <table class="table">
+          <thead class="table-dark">
             <tr>
               <th scope="col">#</th>
               <th scope="col">Marca</th>
@@ -21,6 +19,7 @@
             </tr>
           </tbody>
         </table>
+        <p class="m-0 p-0" *ngFor="let marca of vehiculosPorMarca | keyvalue">Total {{ marca.key }}: {{ marca.value }}</p>
       </div>
     </div>
   </div>
